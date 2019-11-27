@@ -1,34 +1,115 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title> ABOUT,Sidhant Samant</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body style="background-color:powderblue;">
-<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>About My Life</h1>
-			<p style='color: red' >Nothing more to tell about my life. </p>
-				
-    		<p>Mobile:7875014507</p>
-		<p>email:sidhant775@gmail.com (or just click email button below to directly email me)</p>
-		<p style='color: green' ><em>Thanks a lot for visting webpage </em></p>
-		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:sidhant775@gmail.com">email</a></li>
-        		<li><a href="https://github.com/sidhantsamant">github.com/sidhantsamant</a></li>
-			</ul>
-		</footer>
-	</body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sidhant Samant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/floatmenu.css">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- Floating Menu -->
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="particles-js">
+    <div class="main-content">
+      <figure>
+        <img  class="profile_img" src="images/profile_img.ico" alt="Ayra Hikari">
+      </figure>
+      <h1>SIDHANT SAMANT</h1>
+      <h2>Age:19 years<br />
+      Address:Goa,India<br />
+      email: sidhant775@gmail.com<br/>
+      </h2>
+         <a style='color: blue;font-size=200px' href="/resume.docx" download>Download My Resume</a> 
+      <h3>Thanks a lot for visitng</h3>
+   
+      <ul class="social">
+        <li><a href="https://github.com/sidhantsamant" target="_blank"><i class="fab fa-github"></i></a></li>
+        <li><a href="https://t.me/sidhant_1920" target="_blank"><i class="fab fa-telegram"></i></a></li>
+        <li><a href="https://instagram.com/_.s.i.d.h.a.n.t._?igshid=eu4vvbqc9umq" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://forum.xda-developers.com/member.php?u=8179904" target="_blank">XDA</a></li>
+      
+      </ul>
+    </div>
+    <footer id="footer">
+      © created with particles.js
+    </footer>
+
+  </div>
+
+  <!-- Particles Script-->
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  
+  <!-- Floating Menu Script -->
+  <div id='ss_menu'>
+    <div onclick="myhref('https://instagram.com/_.s.i.d.h.a.n.t._?igshid=eu4vvbqc9umq');"> <i class="fa fa-instagram"></i> </div>
+    <div onclick="myhref('https://t.me/sidhant_1920');"> <i class="fab fa-telegram"></i> </div>
+    <div onclick="myhref('https://www.linkedin.com/in/sidhant-samant-66227b190');"> <i class="fa fa-linkedin"></i> </div>
+    <div onclick="myhref('index.html');"> <i class="fa fa-home"></i> </div>
+    <div class='menu'>
+      <div class='share' id='ss_toggle' data-rot='180'>
+        <div class='circle'></div>
+        <div class='bar'></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
+  <script>
+  $(document).ready(function(ev) {
+    var toggle = $('#ss_toggle');
+    var menu = $('#ss_menu');
+    var rot;
+    
+    $('#ss_toggle').on('click', function(ev) {
+      rot = parseInt($(this).data('rot')) - 180;
+      menu.css('transform', 'rotate(' + rot + 'deg)');
+      menu.css('webkitTransform', 'rotate(' + rot + 'deg)');
+      if ((rot / 180) % 2 == 0) {
+        //Moving in
+        toggle.parent().addClass('ss_active');
+        toggle.addClass('close');
+      } else {
+        //Moving Out
+        toggle.parent().removeClass('ss_active');
+        toggle.removeClass('close');
+      }
+      $(this).data('rot', rot);
+    });
+
+    menu.on('transitionend webkitTransitionEnd oTransitionEnd', function() {
+      if ((rot / 180) % 2 == 0) {
+        $('#ss_menu div i').addClass('ss_animate');
+      } else {
+        $('#ss_menu div i').removeClass('ss_animate');
+      }
+    });
+    
+  });
+  </script>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+  <script type="text/javascript">
+    function myhref(web){
+      window.location.href = web;}
+  </script>
+</body>
 </html>
