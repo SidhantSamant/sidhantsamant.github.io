@@ -59,6 +59,7 @@ h3 {
     transform: translate(-50%, -50%); 
 }
 .profile_img {
+  padding: 100;
   border-radius: 50%;
 }
 
