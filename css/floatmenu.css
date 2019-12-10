@@ -248,7 +248,7 @@ html, body {
 }
 
 #ss_menu > .menu.ss_active {
-  background: #00a8ff;
+  background: #341f97;
   -webkit-transform: scale(0.7);
   -moz-transform: scale(0.7);
   -ms-transform: scale(0.7);
