@@ -124,7 +124,7 @@ figure {
 
 /* Particles container */
 #particles-js {
-position: absolute;
+position: fixed;
   width: position: absolute;%;
   height: 100%;
   background-color: #341f97;
