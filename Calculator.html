@@ -10,7 +10,7 @@
     <meta property="og:description" content="Sidhant official website">
     <meta property="og:site_name" content="Sidhant official website">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Sidhant Samant</title>
+    <title>Calculator</title>
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -38,7 +38,8 @@
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <link rel="stylesheet" href="https://getmdl.io/assets/main.css">
     <link rel="stylesheet" href="https://getmdl.io/material.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
     
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -51,15 +52,16 @@
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
 	      <img class="my-api-image" id="rqlogo" src="images/logo.jpg" alt="Sid" style="width:150px;height:150px;border-radius: 20px;padding: 2px;">
-          <h4>Sidhant Samant,The best.</h4>
+          <h4>A Simple Calculator</h4>
         </div>
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
-		  <a href="index.html" class="mdl-layout__tab">HOME</a>
-      <a href="blog.html" class="mdl-layout__tab is-active">BLOG</a>
-      <a href="Calculator.html" class="mdl-layout__tab">CALCULATOR</a>
-		  <a href="about.html" class="mdl-layout__tab">ABOUT ME</a>
+      <a href="index.html" class="mdl-layout__tab">HOME</a>
+      <a href="blog.html" class="mdl-layout__tab">BLOG</a>
+      <a href="Calculator.html" class="mdl-layout__tab is-active">CALCULATOR</a> 
+      <a href="about.html" class="mdl-layout__tab">ABOUT ME</a>
+      
 		  
         </div>
       </header>
@@ -67,9 +69,40 @@
         <div class="mdl-layout__tab-panel is-active" id="home">
            <section class="section--center mdl-grid mdl-grid--no-spacing">
             <div class="mdl-cell--12-col">
-            			<h5>BLOG</h5>
-			<p style='color: black' >Sorry no blog as of now.Stay Tuned </p>
-    		
+              <div id="container">
+                <div id="calculator">
+                  <div id="result">
+                    <div id="history">
+                      <p id="history-value"></p>
+                    </div>
+                    <div id="output">
+                      <p id="output-value"></p>
+                    </div>
+                  </div>
+                  <div id="keyboard">
+                    <button class="operator" id="clear">C</button>
+                    <button class="operator" id="backspace">CE</button>
+                    <button class="operator" id="%">%</button>
+                    <button class="operator" id="/">&#247;</button>
+                    <button class="number" id="7">7</button>
+                    <button class="number" id="8">8</button>
+                    <button class="number" id="9">9</button>
+                    <button class="operator" id="*">&times;</button>
+                    <button class="number" id="4">4</button>
+                    <button class="number" id="5">5</button>
+                    <button class="number" id="6">6</button>
+                    <button class="operator" id="-">-</button>
+                    <button class="number" id="1">1</button>
+                    <button class="number" id="2">2</button>
+                    <button class="number" id="3">3</button>
+                    <button class="operator" id="+">+</button>
+                    <button class="empty" id="empty"></button>
+                    <button class="number" id="0">0</button>
+                    <button class="empty" id="empty"></button>
+                    <button class="operator" id="=">=</button>
+                  </div>
+                </div>
+              </div>
         	</section>
         </div><br><br>
         <footer class="page-footer mdl-color--grey-900">
@@ -100,7 +133,7 @@
         </footer>
       </main>
     </div>
-
+    <script src="js/calculator.js"></script>
     <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
     <!-- Compiled and minified JavaScript -->
