@@ -1,12 +1,13 @@
 body{
 	font-family: 'Open Sans',sans-serif;
 	background-color: #050b5c;
-	height: 550px;
+	height: auto;
+	width: auto;
 }
 #container{
-	width: 500px;
+	width: 1000px;
     height: 550px;
-	margin: 50px auto;	
+	margin: 20px auto;	
 }
 #calculator{
 	width: 320px;
