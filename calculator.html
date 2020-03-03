@@ -1,7 +1,6 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/calculator.css">
-		<link rel="stylesheet" href="css/floatmenu.css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
 		<title>Calculator</title>
 	</head>
@@ -41,76 +40,5 @@
 			</div>
 		</div>
 		<script src="js/calculator.js"></script>
-		
-		
-		
-<!-- Floating Menu Script -->
-  <div id='ss_menu'>
-    <div onclick="myhref('https://instagram.com/_.s.i.d.h.a.n.t._?igshid=eu4vvbqc9umq');"> <i class="fab fa-instagram"></i> </div>
-    <div onclick="myhref('https://t.me/sidhant_1920');"> <i class="fab fa-telegram"></i> </div>
-    <div onclick="myhref('https://www.linkedin.com/in/sidhant-samant-66227b190');"> <i class="fab fa-linkedin"></i> </div>
-    <div onclick="myhref('index.html');"> <i class="fa fa-home"></i> </div>
-    <div class='menu'>
-      <div class='share' id='ss_toggle' data-rot='180'>
-        <div class='circle'></div>
-        <div class='bar'></div>
-      </div>
-    </div>
-  </div>
-  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> 
-  <script>
-  $(document).ready(function(ev) {
-    var toggle = $('#ss_toggle');
-    var menu = $('#ss_menu');
-    var rot;
-    
-    $('#ss_toggle').on('click', function(ev) {
-      rot = parseInt($(this).data('rot')) - 180;
-      menu.css('transform', 'rotate(' + rot + 'deg)');
-      menu.css('webkitTransform', 'rotate(' + rot + 'deg)');
-      if ((rot / 180) % 2 == 0) {
-        //Moving in
-        toggle.parent().addClass('ss_active');
-        toggle.addClass('close');
-      } else {
-        //Moving Out
-        toggle.parent().removeClass('ss_active');
-        toggle.removeClass('close');
-      }
-      $(this).data('rot', rot);
-    });
-
-    menu.on('transitionend webkitTransitionEnd oTransitionEnd', function() {
-      if ((rot / 180) % 2 == 0) {
-        $('#ss_menu div i').addClass('ss_animate');
-      } else {
-        $('#ss_menu div i').removeClass('ss_animate');
-      }
-    });
-    
-  });
-  </script>
-  <script type="text/javascript">
-
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36251023-1']);
-    _gaq.push(['_setDomainName', 'jqueryscript.net']);
-    _gaq.push(['_trackPageview']);
-
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-  </script>
-  <script type="text/javascript">
-    function myhref(web){
-      window.location.href = web;}
-  </script>
-		
-		
-		
-		
 	</body>
 </html>
