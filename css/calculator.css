@@ -10,7 +10,9 @@ body{
 	margin: 50px auto;	
 }
 #calculator{
-	align:center;
+	align-content: center;
+        justify-items: center;
+        align-items: center;
 	width: 320px;
 	height: 520px;
 	background-color: #eaedef;
