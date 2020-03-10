@@ -10,6 +10,7 @@ body{
 	margin: 50px auto;	
 }
 #calculator{
+	align:center;
 	width: 320px;
 	height: 520px;
 	background-color: #eaedef;
