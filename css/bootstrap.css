@@ -74,6 +74,7 @@ dfn {
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
+  text-align: center;
 }
 
 mark {
@@ -116,6 +117,8 @@ figure {
 hr {
   box-sizing: content-box;
   height: 0;
+  width: 100%;
+  text-align: center;
 }
 
 pre {
@@ -397,7 +400,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 3px solid #097744;
 }
 
 .sr-only {
@@ -430,6 +433,7 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+  text-align:center;
 }
 h1 small,
 h1 .small, h2 small,

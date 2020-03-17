@@ -7,11 +7,12 @@ body{
 #container{
 	width: 340px;
     height: 550px;
-	margin: 50px auto;	
+  margin: 50px auto;
+ 	
 }
 #calculator{
 	width: 320px;
-	height: 520px;
+  height: 520px;
 	background-color: #eaedef;
 	margin: 0 auto;
 	top: 20px;
