@@ -33,25 +33,33 @@ h1 {
   color: rgb(53, 53, 53);
   font-family: 'Source Code Pro', monospace;
   font-weight: bold;
-  font-size: 27px;
+  font-size: 29px;
   margin: 10px;
-  margin-top: 20px;
-  width: auto;
+  text-align: center;
+  width: 100%;
 }
 
 h2 {
   color: #1f1f1f;
   font-family: 'Source Code Pro', monospace;
   font-weight: 600;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-size: 22px;
-
+  text-align: center;
+  
 }
 h3 {
 	color: #0d6b37;
-	}
+  }
+
+  hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 3px solid #097744;
+    width: 105%;
+  } 
 .main-content {
     width: 250px;
     top: 38%;
@@ -67,6 +75,24 @@ h3 {
   margin-top: 160px;
   border-radius: 50%;
 }
+figure {
+  margin: 0;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
 
 /* Figure Image */
 figure {
@@ -79,7 +105,7 @@ figure {
   padding: 0;
   margin: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .social li {
   padding: 0;
