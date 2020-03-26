@@ -18,6 +18,7 @@
     --clr-accent: #16e0bd;
     --clr-footer: #16e0bd;
     --clr-sub-text: #000;
+    --pg-bg:#303030;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -384,7 +385,7 @@ header {
 /* My Projects */
 
 .my-work {
-    background-color: var(--clr-text);
+    background-color: var(--pg-bg);
     color: var(--clr-bg);
     text-align: center;    
 }
@@ -562,6 +563,7 @@ ul{
     --clr-text: #303030;
     --clr-accent: #16e0bd;
     --border-color:#16e0bd;
+    --pg-bg:#303030;
 }
 
 .dark{
@@ -571,6 +573,7 @@ ul{
     --clr-sub-text: #000;
     --clr-footer: #FFC636;
     --border-color:#07083e;
+    --pg-bg:#0f4952;
 }
 
 .solar{
@@ -581,6 +584,7 @@ ul{
     --clr-footer: #2ba4c2;
     --clr-sub-text: #fbffd4;
     --border-color:#003d4c;
+    --pg-bg:#b2d140;
 }
 
 
