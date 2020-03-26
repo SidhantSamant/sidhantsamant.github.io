@@ -13,9 +13,11 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
-    --clr-dark: #303030;
+    --clr-bg: #fff;
+    --clr-text: #303030;
     --clr-accent: #16e0bd;
+    --clr-footer: #16e0bd;
+    --clr-sub-text: #000;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -44,8 +46,8 @@
 
 
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-bg);
+    color: var(--clr-text);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
@@ -74,7 +76,7 @@ strong { font-weight: var(--fw-bold) }
     display: inline-block;
     padding: .5em 2.5em;
     background: var(--clr-accent);
-    color: var(--clr-dark);
+    color: var(--clr-sub-text);
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -104,6 +106,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title {
     margin-bottom: .25em;
+
 }
 
 .section__title--intro {
@@ -125,6 +128,7 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
+    color:var(--clr-sub-text);
 }
 
 .section__subtitle--work {
@@ -147,8 +151,8 @@ header {
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-text);
+    color: var(--clr-bg);
     top: 0;
     bottom: 0;
     left: 0;
@@ -211,10 +215,6 @@ header {
 .nav-open .hamburger::after {
     opacity: 0;
 }
-
-
-
-
 
 
 .hamburger {
@@ -291,14 +291,14 @@ header {
 
 
 
-/*  My services section  */
+/*  things i can do */
 
 .my-services {
-    background-color: var(--clr-dark);
+    background-color: var(--clr-text);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
-    color: var(--clr-light);
+    color: white;
     text-align: center;
 }
 
@@ -313,7 +313,7 @@ header {
     width: 2em;
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
+    background: var(--clr-bg);
     opacity: 0.25;
 }
 
@@ -381,11 +381,11 @@ header {
     }
 }
 
-/* My Work */
+/* My Projects */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
+    background-color: var(--clr-text);
+    color: var(--clr-bg);
     text-align: center;    
 }
 
@@ -397,6 +397,7 @@ header {
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+   
 }
 
 .portfolio__img {
@@ -421,7 +422,7 @@ header {
 
 .footer {
     background: #111;
-    color: var(--clr-accent);
+    color: var(--clr-footer);
     text-align: center;
     padding: 2.5em 0;
     font-size: var(--fs-h3);
@@ -500,4 +501,100 @@ position: fixed;
 .social li a:hover, .social li a:active, .social li a:focus {
   outline: none;
   text-decoration: none;
+}
+
+
+/* theme */
+.dropdown{
+    display: flex;
+    position: relative;
+    width: auto;
+    z-index: 2;
+    background: var(--clr-text);
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    padding: 0.5rem;
+}
+.dropdown-item{
+    margin: 20px;
+}
+ul{
+    list-style-type:none
+    
+}
+.dropdown-item a{
+    width: 100%;
+    height: 100%;
+    size: 0.7rem;
+    font: 600;
+    color: var(--clr-bg);
+    font-weight: bold;
+	text-decoration: none;
+}
+
+.dropdown-item a::before{
+    content:' ';
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+
+}
+
+#dark::before {
+    background: #2a2e35;
+}
+
+#light::before {
+    background: #ffffff;
+}
+
+#solar::before {
+    background:#2ba4c2;
+}
+
+.light{
+    --clr-bg: #fff;
+    --clr-text: #303030;
+    --clr-accent: #16e0bd;
+    --border-color:#16e0bd;
+}
+
+.dark{
+    --clr-bg: #07083E;
+    --clr-text: #c4c4c4;
+    --clr-accent: #FFC636;
+    --clr-sub-text: #000;
+    --clr-footer: #FFC636;
+    --border-color:#07083e;
+}
+
+.solar{
+
+    --clr-bg: #003d4c;
+    --clr-text:  #fbffd4;
+    --clr-accent: #050505;
+    --clr-footer: #2ba4c2;
+    --clr-sub-text: #fbffd4;
+    --border-color:#003d4c;
+}
+
+
+@keyframes color-rotate {
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.intro__img:hover {
+animation: color-rotate 1s;
+animation-iteration-count: infinite;
+animation-direction: alternate;
 }
