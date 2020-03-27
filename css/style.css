@@ -546,6 +546,7 @@ ul{
     text-decoration: none;
     text-align: center;
     margin-bottom: 10px;
+	font-size: 28px;
 }
 
 .dropdown-item a::before{
@@ -598,7 +599,7 @@ ul{
     --border-color:#003d4c;
     --pg-bg:#12584c;
 }
-
+/* hue changing picture */
 
 @keyframes color-rotate {
     from{
