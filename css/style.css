@@ -506,6 +506,17 @@ position: fixed;
 
 
 /* theme */
+
+.themes{
+    border: 4px solid var(--clr-accent);
+    border-radius: 20px;
+    margin: 10px;
+    font-weight: var(--fw-bold);
+    font-size: 32px;
+    text-align: center;
+    padding: 20px;
+}
+
 .dropdown{
     display: flex;
     position: relative;
@@ -531,7 +542,8 @@ ul{
     font: 600;
     color: var(--clr-bg);
     font-weight: bold;
-	text-decoration: none;
+    text-decoration: none;
+    text-align: center;
 }
 
 .dropdown-item a::before{
