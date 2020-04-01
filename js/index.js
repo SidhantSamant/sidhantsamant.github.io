@@ -1,5 +1,6 @@
 const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link')
+const navLinks = document.querySelectorAll('.nav__link');
+const dropDown = document.querySelectorAll('.dropdown-item');
 
 navToggle.addEventListener('click', () => {
     document.body.classList.toggle('nav-open');
@@ -11,6 +12,11 @@ navLinks.forEach(link => {
     })
 })
 
+dropDown.forEach(link => {
+    link.addEventListener('click', () => {
+        document.body.classList.remove('nav-open');
+    })
+})
 
 //theme
 const darkButton = document.getElementById('dark');
@@ -29,7 +35,6 @@ if(theme){
 darkButton.onclick = () => {
  body.classList.replace('light','dark') ||  body.classList.replace('solar','dark');
  localStorage.setItem('theme','dark');
-
 };
 
 lightButton.onclick = () => {
