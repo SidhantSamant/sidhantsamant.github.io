@@ -510,14 +510,14 @@ position: fixed;
 /* theme */
 
 .themes{
-    border: 4px solid var(--clr-accent);
+    border: 3px solid var(--clr-accent);
     border-radius: 20px;
     margin: 10px 0px;
     font-weight: var(--fw-bold);
     font-size: 38px;
     text-align: center;
     padding: 20px 0px;
-    width: 90%;
+    width: 100%;
     color: var(--clr-ham-txt);
 }
 
