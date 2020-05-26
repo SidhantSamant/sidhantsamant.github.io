@@ -399,9 +399,7 @@ header {
 
 .portfolio__item {
     background: var(--clr-accent);
-    color: #000;
     overflow: hidden;
-    text-decoration: none;
     margin: 0 20px;
     margin-bottom: 30px;   
 }
@@ -411,8 +409,17 @@ header {
     position: relative;
     background-color: #fff;
     overflow:hidden;
+    padding: 0 10px;
     z-index: 3;
     height: 100%;
+    width: 100%;
+}
+.portfolio__item a{
+    text-decoration: none;
+    color: #000;
+    font-family: var(--ff-primary);
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .portfolio__img {
