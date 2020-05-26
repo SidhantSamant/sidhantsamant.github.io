@@ -399,8 +399,20 @@ header {
 
 .portfolio__item {
     background: var(--clr-accent);
+    color: #000;
     overflow: hidden;
-   
+    text-decoration: none;
+    margin: 0 20px;
+    margin-bottom: 30px;   
+}
+
+
+.portfolio-item-info{
+    position: relative;
+    background-color: #fff;
+    overflow:hidden;
+    z-index: 3;
+    height: 100%;
 }
 
 .portfolio__img {
