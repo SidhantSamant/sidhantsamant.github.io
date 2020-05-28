@@ -620,8 +620,8 @@ ul{
     --clr-ham-txt:#fbffd4;
     --clr-ham-bg:#12584c;
 }
-/* hue changing picture */
 
+/* hue changing picture */
 @keyframes color-rotate {
     from{
         filter: hue-rotate(0deg);
@@ -640,8 +640,6 @@ animation-direction: alternate;
 #contact-me{
     margin: 0;
     padding: 50px 0;
-    box-sizing: border-box;
-    outline: none;
     font-family: var(--ff-primary);
     background-color: #2c2c2c;
 }
@@ -653,7 +651,6 @@ animation-direction: alternate;
     background: #fff;
     padding: 25px;
     border-radius: 15px;
-
 }
   
 .cform h2{
