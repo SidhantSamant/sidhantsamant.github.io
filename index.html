@@ -29,6 +29,7 @@
                     <li class="nav__item"><a href="#services" class="nav__link">Things I Can Do</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#contact-me" class="nav__link">Contact Me</a></li>
                     <li class="nav__item"><a href="https://sidhantsamant.github.io/sidhant/" class="nav__link">More</a></li>
                     <div class="themes">
                     <li class="nav__item " style="margin-bottom: 15px;">Themes</li>
@@ -133,7 +134,28 @@
                    </div>
 			</div>
         </section>
-        
+
+        <!-- contact me -->
+        <section id="contact-me">
+            <div class="cform">
+                <h2>Contact Me</h2>
+                <div id="error_message"></div>
+                <form id="myform" onsubmit="return validate();" action="https://formspree.io/xnqgpode" method="POST">
+                  <div class="input_field">
+                      <input type="text" placeholder="Name" id="name" name="name">
+                  </div>
+                  <div class="input_field">
+                      <input type="text" placeholder="Email" id="email" name="_replyto">
+                  </div>
+                  <div class="input_field">
+                      <textarea placeholder="Message" id="message" name="message"></textarea>
+                  </div>
+                  <div class="submit-btn">
+                      <input type="submit" value="Send">
+                  </div>
+                </form>
+              </div>
+        </section>
         
         <!-- Footer -->
         <footer class="footer">
@@ -168,6 +190,9 @@
         </footer>
                
         <script src="js/index.js"></script>
+
+        <script data-cfasync="false" type="text/javascript"
+            src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
         
     </body>
 </html>
