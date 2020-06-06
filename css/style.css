@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -359,6 +357,8 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    width: 400px;
+    margin: 0 auto;
 }
 
 @media (min-width: 600px) {
@@ -390,13 +390,7 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
-    }
-}
-
-@media (max-width: 800px) {
-    .about-me__img {
-        width: 400px;
-        margin: 0 auto;
+        width: 500px;
     }
 }
 
