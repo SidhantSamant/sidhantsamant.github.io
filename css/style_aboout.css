@@ -66,6 +66,7 @@ h3 {
 .profile_img {
   margin-top: 160px;
   border-radius: 50%;
+  width: 250px;
 }
 figure {
   margin: 0;
