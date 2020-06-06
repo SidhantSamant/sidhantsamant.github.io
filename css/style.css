@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-/* Custom Properties, update these for your own design */
-
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -359,7 +357,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
-    width: 300px;
+    width: 75%;
     margin: 0 auto;
 }
 
