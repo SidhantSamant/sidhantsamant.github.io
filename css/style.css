@@ -55,6 +55,8 @@ body {
     line-height: 1.6;
 }
 
+
+
 section {
     padding: 5em 2em;
 }
@@ -144,14 +146,19 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    position: sticky;
+    top:0;
+    z-index: 50;
+    height: 50px;
+    background-color: var(--clr-bg);
+    box-shadow: var(--bs);
 }
 
-/* dev sid logo */
+/* sid logo */
 .logo{
     margin: 0;
     font-family: var(--ff-primary);
     max-width: 130px;
-    font-size: 1em;
     font-weight:600;
     display: inline-block;
 }
