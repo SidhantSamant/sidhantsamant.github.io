@@ -151,7 +151,8 @@ header {
     z-index: 50;
     height: 50px;
     background-color: var(--clr-bg);
-    box-shadow: var(--bs);
+    box-shadow: 0.25em 0.125em 0.55em rgba(0,0,0,.15), 0.125em 0.125em 0.15em rgba(0,0,0,.125);
+    opacity: 0.97;
 }
 
 /* sid logo */
