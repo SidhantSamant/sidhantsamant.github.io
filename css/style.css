@@ -10,16 +10,7 @@
     
     --fw-reg: 300;
     --fw-bold: 900;
-    
-    --clr-bg: #fff;
-    --clr-text: #303030;
-    --clr-accent: #16e0bd;
-    --clr-footer: #16e0bd;
-    --clr-sub-text: #000;
-    --project-bg:#303030;
-    --clr-ham-txt:#16e0bd;
-    --clr-ham-bg:#303030;
-    
+
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -150,9 +141,8 @@ header {
     top:0;
     z-index: 50;
     height: 50px;
-    background-color: var(--clr-bg);
-    box-shadow: 0.25em 0.125em 0.55em rgba(0,0,0,.15), 0.125em 0.125em 0.15em rgba(0,0,0,.125);
-    opacity: 0.97;
+    background-color: var(--header-bg);
+    box-shadow: 0.25em 0.125em 0.55em rgba(0,0,0,.15), 0.125em 0.125em 0.15em rgba(0,0,0,.125);  
 }
 
 /* sid logo */
@@ -164,7 +154,7 @@ header {
     display: inline-block;
 }
 
-.nav {
+.nav {		
     position: fixed;
     background: var(--clr-ham-bg);
     color: var(--clr-bg);
@@ -173,7 +163,6 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-    
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -596,14 +585,19 @@ ul{
 }
 
 .light{
+    --header-bg: rgba(255, 255, 255,0.95);
     --clr-bg: #fff;
     --clr-text: #303030;
     --clr-accent: #16e0bd;
     --project-bg:#303030;
     --clr-ham-txt:#fff;
+    --clr-ham-bg:#303030;
+    --clr-footer: #16e0bd;
+    --clr-sub-text: #000;   
 }
 
 .dark{
+    --header-bg: rgba(37, 37, 37,0.95);
     --clr-bg: #252525;
     --clr-text: #f0eeee;
     --clr-accent: #16e0a3;
@@ -615,7 +609,7 @@ ul{
 }
 
 .solar{
-
+    --header-bg: rgba(0, 61, 76,0.95);
     --clr-bg: #003d4c;
     --clr-text:  #fbffd4;
     --clr-accent: #050505;
