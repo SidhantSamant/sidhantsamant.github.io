@@ -158,7 +158,7 @@ header {
     position: fixed;
     background: var(--clr-ham-bg);
     color: var(--clr-bg);
-    top: 50px;
+    top: 0;
     bottom: 0;
     left: 75%;
     right: 0;
