@@ -183,6 +183,7 @@ header {
     padding: 2%;
     align-items: left;
     margin: 0;
+    margin-bottom: 2%;
 }
 
 .nav__link {
@@ -411,7 +412,7 @@ header {
     position: relative;
     margin: 0 10px;
     margin-bottom: 30px;
-    max-width: 300px;
+    max-width: 400px;
     border-radius: 6px; 
 }
 
@@ -550,7 +551,7 @@ header {
     display: inline-block;
     position: relative;
     z-index: 2;
-    background: var(--clr-ham-bg);
+    background: inherit;
     align-items: center;
     height: 3rem;
     padding: 0.5rem;
