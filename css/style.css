@@ -172,7 +172,7 @@ header {
 
 @media (max-width: 600px){
     .nav {
-       height: 50%;
+       height: 40%;
     }   
 }
 .nav__list {
