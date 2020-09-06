@@ -206,7 +206,7 @@ nav{
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: var(--clr-accent);
+    background-color: var(--clr-text);
     border-radius: 10px;
 }
 
