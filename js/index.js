@@ -1,51 +1,52 @@
-const navToggle = document.querySelector('.nav-toggle');
-const navLinks = document.querySelectorAll('.nav__link');
-const dropDown = document.querySelectorAll('.dropdown-item');
 
-navToggle.addEventListener('click', () => {
-    document.body.classList.toggle('nav-open');
-});
+//menu-button
+const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
 })
 
-dropDown.forEach(link => {
-    link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-    })
-})
+//dark mode
+let darkMode = localStorage.getItem('darkMode'); 
 
-//theme
-const darkButton = document.getElementById('dark');
-const lightButton = document.getElementById('light');
-const solarButton = document.getElementById('solar');
-const body = document.body;
+const darkModeToggle = document.querySelector('#dark-mode-toggle');
 
-//memory to hold theme while refresh
-const theme = localStorage.getItem('theme');
-
-if(theme){
-    body.classList.add(theme);
+const enableDarkMode = () => {
+  // 1. Add the class to the body
+  document.body.classList.add('darkmode');
+  // 2. Update darkMode in localStorage
+  localStorage.setItem('darkMode', 'enabled');
 }
 
-//theme button handler
-darkButton.onclick = () => {
- body.classList.replace('light','dark') ||  body.classList.replace('solar','dark');
- localStorage.setItem('theme','dark');
-};
+const disableDarkMode = () => {
+  // 1. Remove the class from the body
+  document.body.classList.remove('darkmode');
+  // 2. Update darkMode in localStorage 
+  localStorage.setItem('darkMode', null);
+}
+ 
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
 
-lightButton.onclick = () => {
- body.classList.replace('dark','light') ||  body.classList.replace('solar','light') ;
- localStorage.setItem('theme','light');
-};
+// When someone clicks the button
+darkModeToggle.addEventListener('click', () => {
+  // get their darkMode setting
+  darkMode = localStorage.getItem('darkMode'); 
+  
+  // if it not current enabled, enable it
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  // if it has been enabled, turn it off  
+  } else {  
+    disableDarkMode(); 
+  }
+});
 
-solarButton.onclick = () => {
-    body.classList.replace('light','solar') || body.classList.replace('dark','solar');
-    localStorage.setItem('theme','solar');
-};
+
 
 //Contact Me
 function validate(){

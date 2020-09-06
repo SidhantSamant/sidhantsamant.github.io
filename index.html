@@ -15,38 +15,28 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
     </head>
 	
-    <body class="light">
+    <body>
         <header>
-            <div>
-                <p class="logo">&lt sidhant &gt</p>
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#contact-me" class="nav__link">Contact Me</a></li>
-                    <li class="nav__item"><a href="https://sidhantsamant.github.io/sidhant/" class="nav__link">More</a></li>
-                    <div class="themes">
-                    <li class="nav__item " style="margin-bottom: 15px;">Themes:
-                        <ul class="nav__item dropdown">
-                            <li class="dropdown-item">
-                                <a id="light" href="#">Light</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a id="dark" href="#">Dark</a>
-                            </li>
-                            <li class="dropdown-item">
-                                <a id="solar" href="#">Solarize</a>
-                            </li>
-                        </ul>
-                    </li>
-                    </div>   
-                </ul>
-            </nav>
+            <nav class="navbar">
+                <div class="brand-title">&lt sidhant / &gt</div>
+                <a href="#" class="toggle-button">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </a>
+                <div class="navbar-links">
+                  <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact-me">Contact</a></li>
+                    <li><a href="https://sidhantsamant.github.io/sidhant/">More</a></li>
+                    <li><a><button id="dark-mode-toggle" class="dark-mode-toggle">
+                        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+                      </button></a></li>
+                  </ul>
+                </div>
+              </nav>
         </header>
         
         <!-- Introduction -->
