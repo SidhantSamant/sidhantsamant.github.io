@@ -3,9 +3,36 @@
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
+const navlink0 = document.getElementsByClassName('navlink0')[0]
+const navlink1 = document.getElementsByClassName('navlink1')[0]
+const navlink2 = document.getElementsByClassName('navlink2')[0]
+const navlink3 = document.getElementsByClassName('navlink3')[0]
+const navlink4 = document.getElementsByClassName('navlink4')[0]
+const navlink5 = document.getElementsByClassName('navlink5')[0]
+
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
 })
+
+navlink0.addEventListener('click', () => {
+  navbarLinks.classList.remove('active')
+})
+navlink1.addEventListener('click', () => {
+  navbarLinks.classList.remove('active')
+})
+navlink2.addEventListener('click', () => {
+  navbarLinks.classList.remove('active')
+})
+navlink3.addEventListener('click', () => {
+  navbarLinks.classList.remove('active')
+})
+navlink4.addEventListener('click', () => {
+  navbarLinks.classList.remove('active')
+})
+navlink5.addEventListener('click', () => {
+  navbarLinks.classList.remove('active')
+})
+
 
 //dark mode
 let darkMode = localStorage.getItem('darkMode'); 

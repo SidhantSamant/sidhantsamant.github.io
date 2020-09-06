@@ -620,11 +620,10 @@ animation-direction: alternate;
 
 .dark-mode-toggle {
     color: var(--foreground);
-    border: 2px solid currentColor;
     padding: 4px;
     background: transparent;
     cursor: pointer;
     border-radius: 5px;
     width: 30px;
     height: 30px;
-  }
+}
