@@ -234,6 +234,8 @@ nav{
 
 .navbar-links ul li a {
     padding: .5rem 1rem;
+	font-size: 1.2rem;
+	font-weight: 600;
 }
 
 .navbar-links.active {
