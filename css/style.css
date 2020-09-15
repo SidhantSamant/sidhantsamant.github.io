@@ -25,7 +25,7 @@
     --clr-ham-bg:#303030;
     --clr-footer: #16e0bd;
     --clr-sub-text: #000; 
-    --clr-bg-hover: #e2e2e2;
+    --clr-nav-bg: #d8d8d8;
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -152,10 +152,72 @@ nav{
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-bg-hover);
+    background-color: var(--clr-nav-bg);
     color: var(--clr-text);
-	box-shadow: var(--bs);  
+	box-shadow: var(--bs);	
 }
+
+
+.toggle-button {
+    padding: .5em;
+    background: transparent;
+    display: none;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+    z-index: 1000;
+}
+
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: var(--clr-text);
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
+
+
 
 .brand-title {
     font-size: 1.5rem;
@@ -192,23 +254,6 @@ nav{
     font-weight: 600;
 }
 
-.toggle-button {
-    position: absolute;
-    top: .75rem;
-    left: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: var(--clr-text);
-    border-radius: 10px;
-}
 
 @media (max-width: 800px) {
 .navbar {
@@ -627,7 +672,7 @@ animation-direction: alternate;
     --project-bg:#1f1f22;
     --clr-ham-txt:#f0f0f0;
     --clr-ham-bg:#303030;
-    --clr-bg-hover: #313131;
+    --clr-nav-bg: #353535;
 }
 
 .dark-mode-toggle {

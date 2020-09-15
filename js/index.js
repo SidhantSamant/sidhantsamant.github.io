@@ -1,5 +1,11 @@
 
 //menu-button
+
+const navToggle = document.querySelector('.toggle-button');
+navToggle.addEventListener('click', () => {
+  document.body.classList.toggle('nav-open');
+});
+
 const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -11,26 +17,32 @@ const navlink4 = document.getElementsByClassName('navlink4')[0]
 const navlink5 = document.getElementsByClassName('navlink5')[0]
 
 toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+  navbarLinks.classList.toggle('active');
 })
 
 navlink0.addEventListener('click', () => {
-  navbarLinks.classList.remove('active')
+  navbarLinks.classList.remove('active');
+  document.body.classList.remove('nav-open');
 })
 navlink1.addEventListener('click', () => {
-  navbarLinks.classList.remove('active')
+  navbarLinks.classList.remove('active');
+  document.body.classList.remove('nav-open');
 })
 navlink2.addEventListener('click', () => {
-  navbarLinks.classList.remove('active')
+  navbarLinks.classList.remove('active');
+  document.body.classList.remove('nav-open');
 })
 navlink3.addEventListener('click', () => {
-  navbarLinks.classList.remove('active')
+  navbarLinks.classList.remove('active');
+  document.body.classList.remove('nav-open');
 })
 navlink4.addEventListener('click', () => {
-  navbarLinks.classList.remove('active')
+  navbarLinks.classList.remove('active');
+  document.body.classList.remove('nav-open');
 })
 navlink5.addEventListener('click', () => {
-  navbarLinks.classList.remove('active')
+  navbarLinks.classList.remove('active');
+  document.body.classList.remove('nav-open');
 })
 
 
