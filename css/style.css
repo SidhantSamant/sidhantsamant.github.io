@@ -247,8 +247,8 @@ nav{
 
 .navbar-links li a:hover {
     border-radius: 10px;
-    color: var(--clr-accent);
-    font-weight: 600;
+    color: var(--clr-text);
+    font-weight: 700;
 }
 .nav-hr{
     display:none;
