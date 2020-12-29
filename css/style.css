@@ -18,11 +18,11 @@
 
     --clr-bg: #fff;
     --clr-text: #303030;
-    --clr-accent: #2b4939;
-    --project-bg:#b8e2b1;
+    --clr-accent: #335546;
+    --project-bg:#ddf5d8;
     --clr-footer: #16e0bd;
     --clr-sub-text: #0f0f0f;
-    --clr-pg-2:#c7c7c7;
+    --clr-pg-2:rgb(176, 195, 177, 0.85);
     --clr-nav-bg:rgb(255, 255, 255, 0.7);
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
@@ -79,7 +79,7 @@ strong { font-weight: var(--fw-bold) }
     display: inline-block;
     padding: .5em 2.5em;
     background: #16e0a3;
-    color: var(--clr-sub-text);
+    color: #000;
     text-decoration: none;
     cursor: pointer;
     font-size: .8rem;
@@ -473,7 +473,6 @@ nav{
 }
 .project-title{
     background-color: var(--clr-pg-2);
-    opacity: 0.8;
     z-index: 3;
     position: absolute;
     bottom: 0;
@@ -497,8 +496,9 @@ nav{
     padding: 0 2%;
     margin: 0 2%;
     color: var(--clr-sub-text);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: var(--ff-primary);
+    font-weight: 600;
 }
 
 .portfolio__img {
@@ -654,7 +654,7 @@ animation-direction: alternate;
     text-align: center;
     width: 100%;
     background: #16e0a3;
-    color: var(--clr-sub-text);
+    color: #000;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-weight: bold;
@@ -681,7 +681,7 @@ animation-direction: alternate;
     --clr-sub-text: #d8d8d8;
     --clr-footer: #FFC636;
     --project-bg:#1f1f22;
-    --clr-pg-2:#1f1f22;
+    --clr-pg-2:rgb(31, 31, 34, 0.85);
     --clr-nav-bg: rgb(48, 48, 48, 0.85);
 }
 
