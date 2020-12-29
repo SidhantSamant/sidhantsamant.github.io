@@ -1,6 +1,4 @@
-
 //menu-button
-
 const navToggle = document.querySelector('.toggle-button');
 navToggle.addEventListener('click', () => {
   document.body.classList.toggle('nav-open');
@@ -84,7 +82,6 @@ darkModeToggle.addEventListener('click', () => {
     disableDarkMode(); 
   }
 });
-
 
 
 //Contact Me

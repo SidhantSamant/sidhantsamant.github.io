@@ -146,11 +146,14 @@ nav{
 }
 .navbar {
     display: flex;
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--clr-nav-bg);
-    color: var(--clr-text);
+    background-color:rgba(42, 42, 42, 0.7);
+    backdrop-filter: blur(5px);
+    color: #fff;
 	box-shadow: var(--bs);	
 }
 
@@ -166,7 +169,6 @@ nav{
     top: 1em;
     z-index: 1000;
 }
-
 .nav-open .nav {
     transform: translateX(0);
 }
@@ -195,7 +197,7 @@ nav{
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-text);
+    background: #fff;
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -240,14 +242,14 @@ nav{
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    color: var(--clr-text);
+    color: #fff;
     padding: 1rem;
     font-size: 1.2rem;
 }
 
 .navbar-links li a:hover {
     border-radius: 10px;
-    color: var(--clr-text);
+    color: var(--clr-accent);
     font-weight: 700;
 }
 .nav-hr{
@@ -301,6 +303,9 @@ nav{
 
     .navbar-links.active {
         display: flex;
+    }
+    .navbar-links li a:hover {
+        color: var(--clr-accent);
     }
 }
 
@@ -689,4 +694,7 @@ animation-direction: alternate;
 	position: absolute;
     top: .75rem;
     right: 1.5rem;
+}
+.dark-mode-toggle:hover{
+    color: var(--clr-accent);
 }
