@@ -19,7 +19,7 @@
     --clr-bg: #fff;
     --clr-text: #303030;
     --clr-accent: #335546;
-    --project-bg:#ddf5d8;
+    --project-bg:#e8f5e5;
     --clr-footer: #16e0bd;
     --clr-sub-text: #0f0f0f;
     --clr-pg-2:rgb(176, 195, 177, 0.85);
@@ -109,6 +109,7 @@ h3 { font-size: var(--fs-h3) }
 
 .section__title {
     margin-bottom: .25em;
+    color: var(--clr-sub-text);
 
 }
 
