@@ -18,11 +18,12 @@
 
     --clr-bg: #fff;
     --clr-text: #303030;
-    --clr-accent: #16e0bd;
-    --project-bg:#303030;
+    --clr-accent: #2b4939;
+    --project-bg:#b8e2b1;
     --clr-footer: #16e0bd;
-    --clr-sub-text: #000; 
-    --clr-nav-bg: #d8d8d8;
+    --clr-sub-text: #0f0f0f;
+    --clr-pg-2:#c7c7c7;
+    --clr-nav-bg:rgb(255, 255, 255, 0.7);
     
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -77,7 +78,7 @@ strong { font-weight: var(--fw-bold) }
 .btn {
     display: inline-block;
     padding: .5em 2.5em;
-    background: var(--clr-accent);
+    background: #16e0a3;
     color: var(--clr-sub-text);
     text-decoration: none;
     cursor: pointer;
@@ -130,7 +131,7 @@ h3 { font-size: var(--fs-h3) }
     padding: .25em 1em;
     font-family: var(--ff-secondary);
     margin-bottom: 1em;
-    color:var(--clr-sub-text);
+    color:var(--clr-bg);
 }
 
 .section__subtitle--work {
@@ -151,9 +152,9 @@ nav{
     z-index: 100;
     justify-content: space-between;
     align-items: center;
-    background-color:rgba(42, 42, 42, 0.85);
+    background-color:var(--clr-nav-bg);
     backdrop-filter: blur(5px);
-    color: #fff;
+    color: var(--clr-sub-text);
 	box-shadow: var(--bs);	
 }
 .toggle-button {
@@ -195,7 +196,7 @@ nav{
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: #fff;
+    background: var(--clr-sub-text);
     width: 2em;
     height: 3px;
     border-radius: 1em;
@@ -241,7 +242,7 @@ nav{
 .navbar-links li a {
     display: block;
     text-decoration: none;
-    color: #fff;
+    color: var(--clr-sub-text);
     padding: 1rem;
     font-size: 1.2rem;
 }
@@ -355,7 +356,7 @@ nav{
 
 /*  things i can do */
 .my-services {
-    background-color: var(--clr-text);
+    background-color: var(--clr-sub-text);
     background-image: url(../img/services-bg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
@@ -364,7 +365,7 @@ nav{
 }
 
 .section__title--services {
-    color: var(--clr-accent);
+    color: #16e0a3;
     position: relative;
 }
 
@@ -471,7 +472,8 @@ nav{
     display: block;
 }
 .project-title{
-    background-color: rgba(56, 56, 56, 0.9);
+    background-color: var(--clr-pg-2);
+    opacity: 0.8;
     z-index: 3;
     position: absolute;
     bottom: 0;
@@ -484,7 +486,7 @@ nav{
 }
 .project-title h6 {
     font-size: 1.3rem;
-    color: #FFFFFF;
+    color: var(--clr-sub-text);
     font-weight: 600;
     font-family: var(--ff-primary);
     padding: 0 2%;
@@ -494,7 +496,7 @@ nav{
 .project-title p {
     padding: 0 2%;
     margin: 0 2%;
-    color: #FFFFFF;
+    color: var(--clr-sub-text);
     font-size: 1.1rem;
     font-family: var(--ff-primary);
 }
@@ -513,7 +515,7 @@ nav{
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    opacity: .5;
+    opacity: .8;
 }
 
 
@@ -607,7 +609,7 @@ animation-direction: alternate;
     margin: 0;
     padding: 50px 0;
     font-family: var(--ff-primary);
-    background-color: #2c2c2c;
+    background-color: #242424;
 }
 .cform{
     margin: 0 auto;
@@ -635,6 +637,7 @@ animation-direction: alternate;
 .cform .input_field input[type="text"],
 .cform textarea{
     border: 2px solid #e0e0e0;
+    border-radius: 7px;
     width: 100%;
     padding: 10px;
 }
@@ -650,7 +653,7 @@ animation-direction: alternate;
     padding: 10px;
     text-align: center;
     width: 100%;
-    background: var(--clr-accent);
+    background: #16e0a3;
     color: var(--clr-sub-text);
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -675,14 +678,15 @@ animation-direction: alternate;
     --clr-bg: #303030;
     --clr-text: #f0eeee;
     --clr-accent: #16e0a3;
-    --clr-sub-text: #000;
+    --clr-sub-text: #d8d8d8;
     --clr-footer: #FFC636;
     --project-bg:#1f1f22;
-    --clr-nav-bg:#3b3b3b;
+    --clr-pg-2:#1f1f22;
+    --clr-nav-bg: rgb(48, 48, 48, 0.85);
 }
 
 .dark-mode-toggle {
-    color: var(--foreground);
+    color: var(--clr-text);
     padding: 4px;
     background: transparent;
     cursor: pointer;
