@@ -387,6 +387,7 @@ nav{
 
 .service {
     max-width: 500px;
+	min-width: 310px;
     margin: 0 auto;
 }
 
