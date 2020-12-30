@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Sidhant Samant personal site, about sidhant samant, tic tac toe game, a simple calculator">
-  <meta name="keywords" content="sidhant samant, tic tac toe game, a simple calculator, about sidhant samant"> 
-  <link rel="shortcut icon" href="img/logo-tic-tac-toe.jpg">
-  <link rel="stylesheet" href="../normalize.css">
-  <link rel="stylesheet" href="css/tic-tac-toe.css">
-  <script src="js/tic-tac-toe.js" defer></script>
-  <title>Tic Tac Toe </title>
-</head>
-<body>
-  <button class="nav-toggle" aria-label="toggle navigation">
-    <span class="hamburger"></span>
-  </button>
-  <nav class="nav">
-    <ul class="nav__list">
-      <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
-      <li class="nav__item"><a href="../index.html#services" class="nav__link">Things I Can Do</a></li>
-      <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
-      <li class="nav__item"><a href="../index.html#work" class="nav__link">My Projects</a></li>
-    </ul>
-  </nav>
-  
-  <div class="board" id="board">
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-    <div class="cell" data-cell></div>
-  </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="description" content="Sidhant Samant personal site, about sidhant samant, tic tac toe game, a simple calculator" />
+		<meta name="keywords" content="sidhant samant, tic tac toe game, a simple calculator, about sidhant samant" />
+		<link rel="shortcut icon" href="img/logo-tic-tac-toe.jpg" />
+		<link rel="stylesheet" href="../normalize.css" />
+		<link rel="stylesheet" href="css/tic-tac-toe.css" />
+		<script src="js/tic-tac-toe.js" defer></script>
+		<title>Tic Tac Toe</title>
+	</head>
+	<body>
+		<button class="nav-toggle" aria-label="toggle navigation">
+			<span class="hamburger"></span>
+		</button>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+				<li class="nav__item"><a href="../index.html#services" class="nav__link">Things I Can Do</a></li>
+				<li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
+				<li class="nav__item"><a href="../index.html#work" class="nav__link">My Projects</a></li>
+			</ul>
+		</nav>
 
+		<div class="board" id="board">
+			<div class="cell" data-cell></div>
+			<div class="cell" data-cell></div>
+			<div class="cell" data-cell></div>
+			<div class="cell" data-cell></div>
+			<div class="cell" data-cell></div>
+			<div class="cell" data-cell></div>
+			<div class="cell" data-cell></div>
+			<div class="cell" data-cell></div>
+			<div class="cell" data-cell></div>
+		</div>
 
-  <div class="winning-message" id="winningMessage">
-    <div data-winning-message-text></div>
-    <button id="restartButton">Restart</button>
-  </div>
-</body>
+		<div class="winning-message" id="winningMessage">
+			<div data-winning-message-text></div>
+			<button id="restartButton">Restart</button>
+		</div>
+	</body>
 </html>
