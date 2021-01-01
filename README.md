@@ -1,6 +1,7 @@
 # sidhantsamant.github.io
 https://sidhantsamant.github.io
  
- 
-SPECIAL THANKS FOR Kevin Powell Sir 
-https://www.youtube.com/user/KepowOb
+SPECIAL THANKS FOR Kevin Powell(Youtube:https://www.youtube.com/user/KepowOb)
+
+##Licensed under the [MIT License](LICENSE)
+
