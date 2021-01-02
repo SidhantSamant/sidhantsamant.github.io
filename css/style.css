@@ -637,7 +637,7 @@ nav {
 	padding: 10px;
 	text-align: center;
 	width: 100%;
-	background: #16e0a3;
+	background: var(--clr-footer);
 	color: #000;
 	text-transform: uppercase;
 	letter-spacing: 5px;
