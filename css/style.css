@@ -112,11 +112,25 @@ strong {
 		filter: hue-rotate(360deg);
 	}
 }
-
 .colorfull-btn:hover {
 	animation: color-rotate 1s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+}
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: rotateX(-10deg);
+	}
+	to {
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+}
+.navbar-links,
+section {
+	animation: transitionIn 0.75s;
 }
 
 /* Typography */
