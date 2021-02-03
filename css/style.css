@@ -299,9 +299,14 @@ nav {
 }
 
 .navbar-links li a:hover {
-	border-radius: 10px;
 	color: var(--clr-accent);
 	font-weight: 700;
+}
+
+.navbar-links li a:focus {
+	color: var(--clr-accent);
+	font-weight: 700;
+	outline: none;
 }
 
 .nav-hr {
@@ -643,6 +648,11 @@ nav {
 .cform textarea {
 	resize: none;
 	height: 80px;
+}
+
+.cform textarea,
+.cform .input_field :focus {
+	outline: none;
 }
 
 .cform .submit-btn input[type="submit"] {
