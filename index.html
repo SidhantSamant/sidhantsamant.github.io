@@ -195,6 +195,28 @@
 
 		<script src="js/index.js"></script>
 
+		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+		<script>
+			$(function () {
+				// Smooth Scrolling
+				$('a[href*="#"]:not([href="#"])').click(function () {
+					if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+						if (target.length) {
+							$("html, body").animate(
+								{
+									scrollTop: target.offset().top,
+								},
+								1000
+							);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
+
 		<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/learn-to-send-email-via-google-script-html-no-server/master/form-submission-handler.js"></script>
 	</body>
 </html>
