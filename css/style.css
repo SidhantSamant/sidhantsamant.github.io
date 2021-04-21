@@ -575,8 +575,9 @@ nav {
 	padding: 0 2%;
 	margin: 0 2%;
 	color: var(--clr-sub-text);
-	font-size: 500;
+	font-size: var(--fs-body);
 	font-family: var(--ff-primary);
+	font-weight: 500;
 }
 
 .portfolio__img {
