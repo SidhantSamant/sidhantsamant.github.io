@@ -8,7 +8,7 @@
 	--ff-primary: "Montserrat", sans-serif;
 	--ff-secondary: "Source Code Pro", monospace;
 
-	--fw-reg: 300;
+	--fw-reg: 500;
 	--fw-bold: 900;
 
 	--fs-h1: 3rem;
@@ -577,7 +577,6 @@ nav {
 	color: var(--clr-sub-text);
 	font-size: var(--fs-body);
 	font-family: var(--ff-primary);
-	font-weight: var(--fw-reg);
 }
 
 .portfolio__img {
