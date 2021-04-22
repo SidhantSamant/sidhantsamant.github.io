@@ -27,6 +27,7 @@
 	--clr-nav-bg: rgb(255, 255, 255, 0.7);
 
 	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+	--bs-nav: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 /* darkmode */
@@ -49,13 +50,6 @@
 		--fs-body: 1rem;
 	}
 }
-
-/* General styles */
-
-/* endable this to add smooth scrolling */
-/* html {
-    scroll-behavior: smooth;
-} */
 
 body {
 	background: var(--clr-bg);
@@ -202,7 +196,7 @@ nav {
 	background-color: var(--clr-nav-bg);
 	backdrop-filter: blur(5px);
 	color: var(--clr-sub-text);
-	box-shadow: var(--bs);
+	box-shadow: var(--bs-nav);
 }
 
 .toggle-button {
@@ -401,6 +395,7 @@ nav {
 		display: grid;
 		width: min-content;
 		margin: 0 auto;
+		padding-top:10%;
 		grid-column-gap: 1em;
 		grid-template-areas:
 			"img title"
@@ -549,7 +544,7 @@ nav {
 	bottom: 0;
 	left: 0;
 	width: 100%;
-	height: 35%;
+	height: 33%;
 	text-align: left;
 	padding: 0;
 	margin: 0;
