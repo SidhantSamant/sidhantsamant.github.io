@@ -290,6 +290,7 @@ nav {
 	color: var(--clr-sub-text);
 	padding: 1rem;
 	font-size: 1.2rem;
+	position: relative;
 }
 
 .navbar-links li a:hover {
@@ -305,6 +306,22 @@ nav {
 
 .nav-hr {
 	display: none;
+}
+
+.navbar-links li a::after {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: var(--clr-accent);
+	bottom: 0px;
+	left: 0;
+	transition: 0.3s ease-in;
+}
+
+.navbar-links li a:hover::after {
+	width: 95%;
+	transition: 0.3s ease-in;
 }
 
 @media (max-width: 800px) {
@@ -342,6 +359,7 @@ nav {
 	.navbar-links ul {
 		width: 100%;
 		flex-direction: column;
+		padding-bottom: 10px;
 	}
 
 	.navbar-links ul li {
@@ -358,8 +376,14 @@ nav {
 	.navbar-links.active {
 		display: flex;
 	}
+
 	.navbar-links li a:hover {
 		color: var(--clr-accent);
+	}
+
+	.navbar-links li a::after {
+		bottom: -10px;
+		left: 0;
 	}
 }
 
@@ -395,7 +419,7 @@ nav {
 		display: grid;
 		width: min-content;
 		margin: 0 auto;
-		padding-top:10%;
+		padding-top: 10%;
 		grid-column-gap: 1em;
 		grid-template-areas:
 			"img title"
