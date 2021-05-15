@@ -323,9 +323,6 @@ nav {
 	width: 95%;
 	transition: 0.3s ease-in;
 }
-.navbar-links li a:focus::after {
-	width: 95%;
-}
 
 @media (max-width: 800px) {
 	.nav-hr {
