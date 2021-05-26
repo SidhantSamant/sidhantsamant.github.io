@@ -308,6 +308,16 @@ nav {
 	display: none;
 }
 
+.navbar-links li a::before {
+	position: absolute;
+	content: "";
+	width: 0%;
+	height: 3px;
+	background-color: var(--clr-accent);
+	bottom: 0px;
+	left: 50%;
+	transition: 0.3s ease-in;
+}
 .navbar-links li a::after {
 	position: absolute;
 	content: "";
@@ -315,12 +325,17 @@ nav {
 	height: 3px;
 	background-color: var(--clr-accent);
 	bottom: 0px;
-	left: 0;
+	right: 50%;
+	transition: 0.3s ease-in;
+}
+
+.navbar-links li a:hover::before {
+	width: 48%;
 	transition: 0.3s ease-in;
 }
 
 .navbar-links li a:hover::after {
-	width: 95%;
+	width: 48%;
 	transition: 0.3s ease-in;
 }
 
@@ -381,9 +396,14 @@ nav {
 		color: var(--clr-accent);
 	}
 
+	.navbar-links li a::before {
+		bottom: -10px;
+		left: 50%;
+	}
+
 	.navbar-links li a::after {
 		bottom: -10px;
-		left: 0;
+		right: 50%;
 	}
 }
 

@@ -44,15 +44,8 @@ h3 {
 	color: #0d6b37;
 }
 
-hr {
-	margin-top: 5px;
-	margin-bottom: 5px;
-	border: 0;
-	border-top: 3px solid #097744;
-	width: 105%;
-}
 .main-content {
-	width: 250px;
+	width: 85%;
 	top: 38%;
 	left: 50%;
 	position: absolute;
@@ -109,7 +102,7 @@ figure {
 }
 .social li a {
 	font-size: 25px;
-	color: #0431c7;
+	color: #102b8a;
 	padding: 14px 14px;
 	border-radius: 4px;
 	font-weight: bold;
@@ -128,7 +121,7 @@ figure {
 }
 
 .social li a:hover {
-	color: #ff3270;
+	color: #702b50;
 }
 
 .social li a:hover,
