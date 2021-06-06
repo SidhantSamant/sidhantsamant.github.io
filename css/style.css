@@ -25,6 +25,7 @@
 	--clr-sub-text: #0f0f0f;
 	--clr-pg-2: rgb(176, 195, 177, 0.75);
 	--clr-nav-bg: rgb(255, 255, 255, 0.7);
+	--roundedui: 15px;
 
 	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 	--bs-nav: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
@@ -67,6 +68,7 @@ section {
 img {
 	display: block;
 	max-width: 100%;
+	border-radius: var(--roundedui);
 }
 
 strong {
@@ -91,6 +93,7 @@ strong {
 	letter-spacing: 2px;
 	font-weight: var(--fw-bold);
 	transition: transform 200ms ease-in-out;
+	border-radius: var(--roundedui);
 }
 
 .btn:hover {
@@ -173,12 +176,14 @@ h3 {
 	font-family: var(--ff-secondary);
 	margin-bottom: 1em;
 	color: var(--clr-bg);
+	border-radius: var(--roundedui);
 }
 
 .section__subtitle--work {
 	color: var(--clr-accent);
 	font-weight: var(--fw-bold);
 	margin-bottom: 2em;
+	border-radius: var(--roundedui);
 }
 
 /* header */
@@ -189,7 +194,8 @@ nav {
 .navbar {
 	display: flex;
 	position: fixed;
-	width: 100%;
+	width: 99%;
+	margin-left: 0.5%;
 	z-index: 100;
 	justify-content: space-between;
 	align-items: center;
@@ -197,6 +203,8 @@ nav {
 	backdrop-filter: blur(5px);
 	color: var(--clr-sub-text);
 	box-shadow: var(--bs-nav);
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
 }
 
 .toggle-button {
@@ -340,6 +348,10 @@ nav {
 }
 
 @media (max-width: 800px) {
+	.navbar {
+		width: 98%;
+		margin-left: 1%;
+	}
 	.nav-hr {
 		display: block;
 		width: 90%;
@@ -495,8 +507,8 @@ nav {
 }
 
 .service {
-	min-width: 30%;
 	margin: 0 auto;
+	min-width: 30%;
 }
 
 @media (min-width: 800px) {
@@ -574,7 +586,7 @@ nav {
 	margin: 0 10px;
 	margin-bottom: 30px;
 	max-width: 400px;
-	border-radius: 6px;
+	border-radius: var(--roundedui);
 }
 
 .portfolio__item img {
@@ -666,7 +678,7 @@ nav {
 	width: 100%;
 	background: #fff;
 	padding: 25px;
-	border-radius: 15px;
+	border-radius: var(--roundedui);
 }
 
 .cform h2 {
@@ -711,7 +723,7 @@ nav {
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-weight: bold;
-	border-radius: 25px;
+	border-radius: var(--roundedui);
 	cursor: pointer;
 }
 
