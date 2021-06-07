@@ -17,7 +17,7 @@
 	--fs-body: 1.1rem;
 
 	--clr-bg: #fff;
-	--clr-text: #303030;
+	--clr-text: #1b1b1b;
 	--clr-accent: #335546;
 	--project-bg: #e8f5e5;
 	--clr-footer: #16e0bd;
@@ -28,7 +28,7 @@
 	--roundedui: 15px;
 
 	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
-	--bs-nav: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.2), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+	--bs-nav: 0em 0.2em 0.5em rgba(0, 0, 0, 0.25), 0em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 /* darkmode */
@@ -78,6 +78,11 @@ strong {
 :focus {
 	outline: 3px solid var(--clr-accent);
 	outline-offset: 3px;
+}
+
+::selection {
+	color: #fff;
+	background-color: #006eff;
 }
 
 /* Buttons */
