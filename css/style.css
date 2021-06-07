@@ -4,6 +4,28 @@
 	box-sizing: border-box;
 }
 
+/* fonts */
+@font-face {
+	font-family: "Montserrat";
+	src: url(../fonts/montserrat-regular.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Source Sans Pro";
+	src: url(../fonts/source-sans-pro-thin.ttf);
+	font-weight: 300;
+}
+@font-face {
+	font-family: "Source Sans Pro";
+	src: url(../fonts/source-sans-pro-bold.ttf);
+	font-weight: 900;
+}
+@font-face {
+	font-family: "Source Code Pro";
+	src: url(../fonts/source-code-pro-regular.ttf);
+	font-weight: 500;
+}
+
 :root {
 	--ff-primary: "Montserrat", sans-serif;
 	--ff-secondary: "Source Code Pro", monospace;
@@ -14,7 +36,7 @@
 	--fs-h1: 3rem;
 	--fs-h2: 2.25rem;
 	--fs-h3: 1.25rem;
-	--fs-body: 1.1rem;
+	--fs-body: 1rem;
 
 	--clr-bg: #fff;
 	--clr-text: #1b1b1b;
@@ -370,9 +392,8 @@ nav {
 	.brand-title {
 		display: flex;
 		position: relative;
-		left: 36%;
+		left: 35%;
 		font-weight: bold;
-		text-align: center;
 	}
 
 	.toggle-button {
