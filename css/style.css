@@ -7,22 +7,22 @@
 /* fonts */
 @font-face {
 	font-family: "Montserrat";
-	src: url(../fonts/montserrat-regular.ttf);
+	src: url(../fonts/montserrat-regular.woff2) format("woff2");
 	font-weight: 500;
 }
 @font-face {
 	font-family: "Source Sans Pro";
-	src: url(../fonts/source-sans-pro-thin.ttf);
+	src: url(../fonts/source-sans-pro-thin.woff2) format("woff2");
 	font-weight: 300;
 }
 @font-face {
 	font-family: "Source Sans Pro";
-	src: url(../fonts/source-sans-pro-bold.ttf);
+	src: url(../fonts/source-sans-pro-bold.woff2) format("woff2");
 	font-weight: 900;
 }
 @font-face {
 	font-family: "Source Code Pro";
-	src: url(../fonts/source-code-pro-regular.ttf);
+	src: url(../fonts/source-code-pro-regular.woff2) format("woff2");
 	font-weight: 500;
 }
 
