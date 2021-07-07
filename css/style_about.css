@@ -55,7 +55,7 @@ h3 {
 }
 
 a {
-	color: #61a7b1;
+	color: #8edfd4;
 	text-decoration: none;
 }
 
@@ -94,7 +94,7 @@ figure {
 
 .social li a {
 	font-size: 1.5em;
-	color: #8edfd4;
+	color: #966aa1;
 	padding: 14px 14px;
 	border-radius: 4px;
 	font-weight: bold;
@@ -113,7 +113,7 @@ figure {
 }
 
 .social li a:hover {
-	color: #966aa1;
+	color: #61a7b1;
 }
 
 .social li a:hover,
