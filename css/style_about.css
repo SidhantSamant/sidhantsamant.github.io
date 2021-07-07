@@ -10,7 +10,7 @@ h1 {
 	color: #a5a1e7;
 	font-family: "Source Code Pro", monospace;
 	font-weight: bold;
-	font-size: 2.75rem;
+	font-size: 2.5em;
 	margin: 10px;
 	text-align: center;
 	width: 100%;
@@ -22,11 +22,13 @@ h2 {
 	font-weight: bold;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	font-size: 22px;
+	font-size: 1.3em;
 	text-align: center;
 }
+
 h3 {
 	color: #94ddb5;
+	font-size: 1.15em;
 }
 
 .main-content {
@@ -56,10 +58,12 @@ a {
 	color: #61a7b1;
 	text-decoration: none;
 }
+
 a:hover,
 a:focus {
 	color: #708ea8;
 }
+
 a:focus {
 	outline: thin dotted;
 	outline: 5px auto -webkit-focus-ring-color;
@@ -78,6 +82,7 @@ figure {
 	text-align: center;
 	margin-bottom: 50px;
 }
+
 .social li {
 	padding: 0;
 	margin: 0;
@@ -86,8 +91,9 @@ figure {
 	display: inline-block;
 	position: relative;
 }
+
 .social li a {
-	font-size: 25px;
+	font-size: 1.5em;
 	color: #8edfd4;
 	padding: 14px 14px;
 	border-radius: 4px;
@@ -120,7 +126,7 @@ figure {
 /* Footer */
 #footer {
 	color: #dadada;
-	font-size: 14px;
+	font-size: 1em;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
