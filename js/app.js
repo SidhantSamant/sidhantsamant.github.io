@@ -64,13 +64,13 @@ particlesJS(
 			line_linked: {
 				enable: true,
 				distance: 150,
-				color: "#fff",
+				color: "#969696",
 				opacity: 0.4,
 				width: 1,
 			},
 			move: {
 				enable: true,
-				speed:3,
+				speed: 3,
 				direction: "none",
 				random: false,
 				straight: false,
@@ -97,20 +97,20 @@ particlesJS(
 			},
 			modes: {
 				grab: {
-					distance: 400,
+					distance: 300,
 					line_linked: {
 						opacity: 1,
 					},
 				},
 				bubble: {
-					distance: 400,
+					distance: 300,
 					size: 40,
 					duration: 2,
 					opacity: 8,
 					speed: 3,
 				},
 				repulse: {
-					distance: 200,
+					distance: 150,
 				},
 				push: {
 					particles_nb: 4,
