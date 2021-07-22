@@ -679,9 +679,14 @@ nav {
 }
 
 .portfolio-item-individual p {
-	max-width: 600px;
+	max-width: 800px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.portfolio-item-individual img {
+	max-width: 800px;
+	margin: 0 auto;
 }
 
 .social li a:hover {
