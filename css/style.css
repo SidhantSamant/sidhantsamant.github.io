@@ -38,13 +38,13 @@
 	--fs-h3: 1.25rem;
 	--fs-body: 1rem;
 
-	--clr-bg: #fff;
-	--clr-text: #1b1b1b;
+	--clr-bg: #ffffff;
+	--clr-text: #000000;
 	--clr-accent: #335546;
 	--project-bg: #e8f5e5;
 	--clr-footer: #16e0bd;
 	--clr-footer-bg: #111111;
-	--clr-sub-text: #0f0f0f;
+	--clr-sub-text: #000000;
 	--clr-pg-2: rgb(176, 195, 177, 0.75);
 	--clr-nav-bg: rgb(255, 255, 255, 0.7);
 	--roundedui: 15px;
@@ -55,14 +55,14 @@
 
 /* darkmode */
 .darkmode {
-	--clr-bg: #303030;
-	--clr-text: #f0eeee;
+	--clr-bg: #272727;
+	--clr-text: #ffffff;
 	--clr-accent: #16e0a3;
-	--clr-sub-text: #d8d8d8;
+	--clr-sub-text: #ffffff;
 	--clr-footer: #ffc636;
 	--project-bg: #1f1f22;
 	--clr-pg-2: rgb(31, 31, 34, 0.8);
-	--clr-nav-bg: rgb(48, 48, 48, 0.85);
+	--clr-nav-bg: rgba(46, 45, 45, 0.85);
 }
 
 @media (min-width: 800px) {
@@ -813,7 +813,7 @@ nav {
 		text-align: center;
 		padding: 5em 0;
 		font-size: 1.3rem;
-		min-height: 400px;
+		min-height: 430px;
 	}
 	.copyright-text {
 		font-size: 1.1rem;
