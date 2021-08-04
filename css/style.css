@@ -799,6 +799,9 @@ nav {
 		width: 48%;
 		transition: 0.3s ease-in;
 	}
+	.dark-mode-toggle:hover {
+		color: var(--clr-accent);
+	}
 	.project__img:hover,
 	.project__item:focus .project__img {
 		transform: scale(1.2);
