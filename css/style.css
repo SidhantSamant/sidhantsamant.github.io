@@ -665,13 +665,13 @@ nav {
 
 .project-blogs-individual p {
 	max-width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto;
 }
 
 .project-blogs-individual img {
+	width: 100%;
 	max-width: 800px;
-	margin: 0 auto;
+	margin: 20px auto;
 }
 
 .social li a:hover {
@@ -820,7 +820,7 @@ nav {
 		text-align: center;
 		padding: 5em 0;
 		font-size: 1.3rem;
-		min-height: 430px;
+		min-height: 455px;
 	}
 }
 
