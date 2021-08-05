@@ -53,6 +53,15 @@
 	--bs-nav: 0em 0.2em 0.5em rgba(0, 0, 0, 0.25), 0em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
+@media (min-width: 800px) {
+	:root {
+		--fs-h1: 4.5rem;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1rem;
+	}
+}
+
 /* darkmode */
 .darkmode {
 	--clr-bg: #303030;
@@ -63,15 +72,6 @@
 	--clr-project-bg: #1f1f22;
 	--clr-pg-2: rgb(31, 31, 34, 0.8);
 	--clr-nav-bg: rgb(48, 48, 48, 0.85);
-}
-
-@media (min-width: 800px) {
-	:root {
-		--fs-h1: 4.5rem;
-		--fs-h2: 3.75rem;
-		--fs-h3: 1.5rem;
-		--fs-body: 1rem;
-	}
 }
 
 body {
@@ -125,7 +125,7 @@ strong {
 /* Buttons */
 .btn {
 	display: inline-block;
-	padding: 0.5em 2.5em;
+	padding: 1em 2.5em;
 	background: #16e0a3;
 	color: #000;
 	text-decoration: none;
@@ -462,7 +462,6 @@ nav {
 	background-color: var(--clr-sub-text);
 	background-image: url(../img/services-bg.jpg);
 	background-size: cover;
-	/* background-blend-mode: multiply; */
 	color: white;
 	text-align: center;
 }
@@ -634,7 +633,7 @@ nav {
 	margin: 20px auto;
 }
 
-/* footer */
+/* contact form */
 .contact-form {
 	margin: 0 auto;
 	text-align: center;
@@ -704,7 +703,7 @@ nav {
 }
 
 :focus::-webkit-input-placeholder {
-	opacity: 0.3;
+	opacity: 0.1;
 }
 
 #error_message {
@@ -716,6 +715,7 @@ nav {
 	transition: all 0.5s ease;
 }
 
+/* footer */
 .footer a {
 	color: inherit;
 	text-decoration: none;
@@ -729,7 +729,7 @@ nav {
 	list-style: none;
 	display: flex;
 	justify-content: center;
-	margin: 2em 0 0;
+	margin: 2em 0;
 	padding: 0;
 }
 
@@ -742,7 +742,7 @@ nav {
 }
 
 .fa-heart {
-	color: red;
+	color: #d10f0f;
 }
 
 @media (min-width: 600px) {
@@ -780,12 +780,12 @@ nav {
 	}
 }
 
-/*focus & hover effects*/
+/*hover effects*/
 @media (hover: hover) {
 	.btn:hover {
 		transform: scale(1.1);
-		background-color: #107766;
-		color: #ffffff;
+		background-color: #09b195;
+		color: #000;
 	}
 	.navbar-links li a:hover {
 		color: var(--clr-accent);
