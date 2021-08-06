@@ -134,7 +134,7 @@ strong {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-weight: var(--fw-bold);
-	transition: transform 200ms ease-in-out;
+	transition: transform 300ms ease-in-out;
 	border-radius: var(--roundedui);
 }
 
@@ -423,6 +423,7 @@ nav {
 	position: absolute;
 	top: 0.75rem;
 	right: 1.5rem;
+	transition: transform 300ms ease-in-out;
 }
 
 /*  Intro section  */
@@ -705,6 +706,7 @@ nav {
 
 .contact-form .submit-btn input[type="submit"]:hover {
 	opacity: 0.9;
+	transform: scale(1.1);
 }
 
 ::-webkit-input-placeholder {
@@ -803,6 +805,7 @@ nav {
 		animation-direction: alternate;
 	}
 	.navbar-links li a:hover {
+		transform: scale(1.1);
 		color: var(--clr-accent);
 		font-weight: 700;
 	}
@@ -815,6 +818,7 @@ nav {
 		transition: 0.3s ease-in;
 	}
 	.dark-mode-toggle:hover {
+		transform: scale(1.2);
 		color: var(--clr-accent);
 	}
 	.project__img:hover,
@@ -850,6 +854,6 @@ nav {
 		opacity: 0.5;
 	}
 	.dark-mode-toggle:active {
-		color: var(--clr-accent);
+		transform: scale(1.5);
 	}
 }
