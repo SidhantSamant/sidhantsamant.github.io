@@ -138,6 +138,16 @@ strong {
 	border-radius: var(--roundedui);
 }
 
+/* hue changing button */
+@keyframes color-rotate {
+	from {
+		filter: hue-rotate(0deg);
+	}
+	to {
+		filter: hue-rotate(360deg);
+	}
+}
+
 .navbar-links,
 section {
 	animation: transitionIn 0.75s;
@@ -787,6 +797,11 @@ nav {
 		background-color: #09b195;
 		color: #000;
 	}
+	.colorful-btn:hover {
+		animation: color-rotate 1s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
 	.navbar-links li a:hover {
 		color: var(--clr-accent);
 		font-weight: 700;
@@ -822,5 +837,19 @@ nav {
 	}
 	.footer__link:hover {
 		text-decoration: underline;
+	}
+}
+
+@media (hover: none) {
+	.btn:active {
+		transform: scale(1.1);
+		background-color: #09b195;
+		color: #000;
+	}
+	.contact-form .submit-btn input[type="submit"]:active {
+		opacity: 0.5;
+	}
+	.dark-mode-toggle:active {
+		color: var(--clr-accent);
 	}
 }
