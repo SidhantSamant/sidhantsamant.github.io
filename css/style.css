@@ -855,4 +855,8 @@ nav {
 	.dark-mode-toggle:active {
 		transform: scale(1.5);
 	}
+	.project__item:active .project__img {
+		transform: scale(1.2);
+		opacity: 0.8;
+	}
 }
