@@ -125,6 +125,7 @@ strong {
 /* Buttons */
 .btn {
 	display: inline-block;
+	outline: none;
 	padding: 1em 2.5em;
 	background: #16e0a3;
 	color: #000;
