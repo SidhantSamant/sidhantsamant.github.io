@@ -30,11 +30,11 @@ navLink3.onclick = function () {
 //dark mode
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
-const enableDarkMode = () => {
+const enableDarkMode = function () {
 	document.body.classList.add("darkmode");
 	localStorage.setItem("darkMode", "enabled");
 };
-const disableDarkMode = () => {
+const disableDarkMode = function () {
 	document.body.classList.remove("darkmode");
 	localStorage.setItem("darkMode", null);
 };
@@ -43,7 +43,7 @@ if (darkMode === "enabled") {
 	enableDarkMode();
 }
 // When someone clicks the button
-darkModeToggle.addEventListener("click", () => {
+darkModeToggle.onclick = function () {
 	darkMode = localStorage.getItem("darkMode");
 
 	if (darkMode !== "enabled") {
@@ -51,7 +51,7 @@ darkModeToggle.addEventListener("click", () => {
 	} else {
 		disableDarkMode();
 	}
-});
+};
 
 //Contact Me
 function validate() {
