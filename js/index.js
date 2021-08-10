@@ -30,6 +30,7 @@ navLink3.onclick = function () {
 //dark mode
 let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
+//function for enabling and disabling dark mode
 const enableDarkMode = function () {
 	document.body.classList.add("darkmode");
 	localStorage.setItem("darkMode", "enabled");
