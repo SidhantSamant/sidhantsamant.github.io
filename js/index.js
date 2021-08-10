@@ -6,26 +6,26 @@ const navLink1 = document.getElementsByClassName("navlink")[1];
 const navLink2 = document.getElementsByClassName("navlink")[2];
 const navLink3 = document.getElementsByClassName("navlink")[3];
 
-toggleButton.addEventListener("click", () => {
+toggleButton.onclick = function () {
 	navbarLinks.classList.toggle("active");
 	document.body.classList.toggle("nav-open");
-});
-navLink0.addEventListener("click", () => {
+};
+navLink0.onclick = function () {
 	navbarLinks.classList.remove("active");
 	document.body.classList.remove("nav-open");
-});
-navLink1.addEventListener("click", () => {
+};
+navLink1.onclick = function () {
 	navbarLinks.classList.remove("active");
 	document.body.classList.remove("nav-open");
-});
-navLink2.addEventListener("click", () => {
+};
+navLink2.onclick = function () {
 	navbarLinks.classList.remove("active");
 	document.body.classList.remove("nav-open");
-});
-navLink3.addEventListener("click", () => {
+};
+navLink3.onclick = function () {
 	navbarLinks.classList.remove("active");
 	document.body.classList.remove("nav-open");
-});
+};
 
 //dark mode
 let darkMode = localStorage.getItem("darkMode");
