@@ -1,31 +1,19 @@
 //Navbar buttons
 const toggleButton = document.querySelector(".toggle-button");
 const navbarLinks = document.querySelector(".navbar-links");
-const navLink0 = document.getElementsByClassName("navlink")[0];
-const navLink1 = document.getElementsByClassName("navlink")[1];
-const navLink2 = document.getElementsByClassName("navlink")[2];
-const navLink3 = document.getElementsByClassName("navlink")[3];
+var navLink = navbarLinks.getElementsByClassName("navlink");
 
 toggleButton.onclick = function () {
 	navbarLinks.classList.toggle("active");
 	document.body.classList.toggle("nav-open");
 };
-navLink0.onclick = function () {
-	navbarLinks.classList.remove("active");
-	document.body.classList.remove("nav-open");
-};
-navLink1.onclick = function () {
-	navbarLinks.classList.remove("active");
-	document.body.classList.remove("nav-open");
-};
-navLink2.onclick = function () {
-	navbarLinks.classList.remove("active");
-	document.body.classList.remove("nav-open");
-};
-navLink3.onclick = function () {
-	navbarLinks.classList.remove("active");
-	document.body.classList.remove("nav-open");
-};
+
+for (var i = 0; i < navLink.length; i++) {
+	navLink[i].onclick = function () {
+		navbarLinks.classList.remove("active");
+		document.body.classList.remove("nav-open");
+	};
+}
 
 //dark mode
 let darkMode = localStorage.getItem("darkMode");
