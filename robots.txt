@@ -2,5 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Disallow: /about.html
 Sitemap: https://sidhantsamant.github.io/sitemap.xml
