@@ -63,7 +63,7 @@
 		<!-- Introduction -->
 		<section class="intro" id="home">
 			<h1 class="section__title section__title--intro">Hi, I am <strong>Sidhant Samant</strong></h1>
-			<p class="section__subtitle section__subtitle--intro">front-end dev</p>
+			<p class="section__subtitle section__subtitle--intro"><span class="typing"></span></p>
 			<img src="img/dev-sid-01.jpg" alt="Sidhant Samant" class="intro__img" />
 		</section>
 
@@ -204,6 +204,17 @@
 		</footer>
 
 		<script src="js/index.js"></script>
+
+		<!-- typed.js -->
+		<script src="js/typed.js"></script>
+		<script type="text/javascript">
+			var typed = new Typed(".typing", {
+				strings: ["ECE student", "Frontend Dev", "Truly Indian"],
+				loop: true,
+				typeSpeed: 100,
+				backSpeed: 50,
+			});
+		</script>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 		<script>
