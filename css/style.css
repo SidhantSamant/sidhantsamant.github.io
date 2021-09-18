@@ -43,9 +43,10 @@
 	--clr-accent: #335546;
 	--clr-project-bg: #dde9da;
 	--clr-footer: #16e0bd;
+	--clr-contact-field: #eff8ee;
 	--clr-footer-bg: #111111;
 	--clr-sub-text: #000000;
-	--clr-pg-2: rgb(176, 195, 177, 0.75);
+	--clr-project-sub-bg: rgb(176, 195, 177, 0.75);
 	--clr-nav-bg: rgb(255, 255, 255, 0.7);
 	--roundedui: 15px;
 
@@ -69,7 +70,8 @@
 	--clr-accent: #16e0a3;
 	--clr-sub-text: #ffffff;
 	--clr-project-bg: #1f1f22;
-	--clr-pg-2: rgb(31, 31, 34, 0.8);
+	--clr-contact-field: #303030;
+	--clr-project-sub-bg: rgb(31, 31, 34, 0.8);
 	--clr-nav-bg: rgb(48, 48, 48, 0.85);
 }
 
@@ -585,7 +587,7 @@ nav {
 }
 
 .project-title {
-	background-color: var(--clr-pg-2);
+	background-color: var(--clr-project-sub-bg);
 	z-index: 3;
 	position: absolute;
 	bottom: 0;
@@ -674,14 +676,14 @@ nav {
 	border-radius: 7px;
 	width: 100%;
 	padding: 10px;
-	background-color: var(--clr-bg);
+	background-color: var(--clr-contact-field);
 	color: var(--clr-text);
 }
 
 .contact-form textarea {
 	resize: none;
 	height: 80px;
-	background-color: var(--clr-bg);
+	background-color: var(--clr-contact-field);
 }
 
 .contact-form textarea,
