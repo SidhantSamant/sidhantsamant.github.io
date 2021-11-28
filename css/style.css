@@ -86,7 +86,7 @@
 ::-webkit-scrollbar-track {
 	background: var(--clr-scrollbar-bg);
 	border-radius: 10px;
-	margin: 10px 0;
+	margin: 5px 0;
 }
 ::-webkit-scrollbar-thumb {
 	background: var(--clr-scrollbar);
