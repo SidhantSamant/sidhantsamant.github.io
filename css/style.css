@@ -37,6 +37,7 @@
 	--fs-h2: 2.25rem;
 	--fs-h3: 1.25rem;
 	--fs-body: 1rem;
+	--roundedui: 15px;
 
 	--clr-bg: #ffffff;
 	--clr-text: #000000;
@@ -50,7 +51,7 @@
 	--clr-nav-bg: rgb(255, 255, 255, 0.7);
 	--clr-scrollbar-bg: #d3d3d3;
 	--clr-scrollbar: #5f5f5f;
-	--roundedui: 15px;
+	--clr-scrollbar-hover: #343b36;
 
 	--bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25), 0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 	--bs-nav: 0em 0.2em 0.5em rgba(0, 0, 0, 0.25), 0em 0.125em 0.25em rgba(0, 0, 0, 0.15);
@@ -68,6 +69,7 @@
 	--clr-nav-bg: rgb(48, 48, 48, 0.85);
 	--clr-scrollbar-bg: #242424;
 	--clr-scrollbar: #888;
+	--clr-scrollbar-hover: #555;
 }
 
 @media (min-width: 800px) {
@@ -94,7 +96,7 @@
 	border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: #555;
+	background: var(--clr-scrollbar-hover);
 }
 
 body {
